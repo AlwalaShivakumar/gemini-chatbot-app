@@ -42,7 +42,7 @@ try:
     api_key = st.secrets["GEMINI_API_KEY"]
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel(
-        model_name='gemini-pro',
+    model_name='gemini-1.5-flash-latest',
         generation_config={'temperature': 0.7},
         system_instruction=system_prompt # Set the persona
     )
